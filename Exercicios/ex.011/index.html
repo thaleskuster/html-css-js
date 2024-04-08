@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou smplismente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reporduzir audios em HTML5</p>
+    <!--<audio src="midia/lambasaia.mp3" controls autoplay></audio -->
+    <audio preload="auto" autoplay controls >
+        <source src="midia/lambasaia.mp3" type="aduio/mpeg">
+        <source src="midia/lambasaia.mp3" type="audio/ogg">
+        <source src="midia/lambasaia.mp3" type="audio/wav">
+        <p>Infelizmente seu navegador nao consegue reproduzir audio. <a href="midia/lambasaia.mp3">Clique aqui para baixa o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
